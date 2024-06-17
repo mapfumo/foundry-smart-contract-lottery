@@ -1,13 +1,41 @@
+# Proveably Random Raffle Contracts
+
+## About
+
+The purpose of this code is to create a proveably random smart contract lottery.
+
+## What we want the contract to do
+
+1. Users can enter by paying for a ticket
+   1. The ticket fees are going to the winner during the draw
+2. After X period of time, the lottery will be automatically draw a winner
+   1. Thid this be done programatically
+3. Using Chainlink VRF (Verifiable Random Function) & Chainlink Automation
+   1. Chainlink VRF -> Randomness (generate randomness outside the blockchain)
+   2. Chainlink Automation -> Time based trigger
+
+## Tests!
+
+1. Write some deploy scripts
+2. Write tests for the contract
+   1. Work on local chain
+   2. Forked Testnet
+   3. Forket Mainnet
+
+## Foundry Tips
+
+forge coverage --report debug > coverage.txt
+
 ## Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
 Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
+- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
+- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
+- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
 ## Documentation
 
