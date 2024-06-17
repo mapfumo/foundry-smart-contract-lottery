@@ -235,10 +235,10 @@ contract RaffleTest is Test {
     function testFulfillRandomWordsPicksAWinnerResetsAndSendsMoney() public raffleEnteredAndTimePassed {
         // Enter contract, Enter the lottery, perform upkeep, call fulfillRandomWords
         // We will pretend to be the chainlink node for the fulfillRandomWords test on our local test
-        
+
         // Arrange
         uint256 additionEntrants = 5; // only have person who has entered the draw when we started
-        uint256 startingIndex = 1;    // because of (raffleEnteredAndTimePassed) so we start at 1
+        uint256 startingIndex = 1; // because of (raffleEnteredAndTimePassed) so we start at 1
         for (uint256 i = startingIndex; i < startingIndex + additionEntrants; i++) {
             // now we have a whole bunch of people enter the raffle
             address player = address(uint160(i)); // address(1), address(2), etc
@@ -249,13 +249,5 @@ contract RaffleTest is Test {
         }
 
         // pretend to be chainlink VRF to get random number
-
-
     }
-
-
-
-
-
-
 }
