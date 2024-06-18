@@ -23,7 +23,7 @@ contract DeployRaffle is Script {
 
         // 1.
         // we need a subscriptionId to deploy the raffle if we don't have one
-        // We create it it and then fund it
+        // We create it and then fund it
         if (subscriptionId == 0) {
             // we are going to need to create a subscription!
             CreateSubscription createSubscription = new CreateSubscription();

@@ -50,7 +50,6 @@ contract FundSubscription is Script {
         if (block.chainid == 31337) {
             vm.startBroadcast();
             VRFCoordinatorV2Mock(vrfCoordinator).fundSubscription(subId, FUND_AMOUNT);
-
             vm.stopBroadcast();
         } else {
             // Doing a real transfer here
